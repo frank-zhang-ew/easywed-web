@@ -1,4 +1,6 @@
 /*公用样式*/
+ body {
+font-family: "Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif;}
 a {
   color: #690;
   text-decoration: none;
@@ -77,9 +79,9 @@ a:focus {
 .yjPicInfo strong{ color:#666;}
 /*边栏图片列表*/
 
-.yjPicMore{ position: relative; zoom:1; color: #fff; background: #690; display: inline-block;}
+.yjPicMore{ position: relative; zoom:1; color: #fff; background: #8cb948; display: inline-block;}
 .yjPicMore img{ margin-bottom: 0!important}
-.yjPicMore:hover{ color: #fff;}
+.yjPicMore:hover{ color: #fff; background-color: #690}
 .yjPicMore span{ position: absolute; bottom: 10px; right: 10px; display: block;}
 .yjPicMore strong{ font-size: 30px; font-weight: normal;}
 /*评论部分*/
@@ -141,12 +143,21 @@ filter: alpha(opacity=50); margin-top: -23px}
 .yjDialog .modal-header a:hover{ color: #fff; opacity: 0.9;
 filter: alpha(opacity=90); background: transparent;}
 .yjDialog .carousel-control .glyphicon{  font-size: 60px}
-.yjDialog .carousel-indicators li{width:8.333333333333332%; padding-left:10px; height: auto; margin: 0; border: none; border-radius:0; text-indent: 0;opacity: 0.6;
+.yjDialog .carousel-indicators li{width:10%; float:left;padding-right:5px; height: auto; margin: 0 ; border: none; border-radius:0; text-indent: 0;opacity: 0.6;
 filter: alpha(opacity=60);}
 .yjDialog .carousel-indicators .active{ position: relative;opacity: 1;
 filter: alpha(opacity=100); background: transparent;}
-.yjDialog .carousel-indicators{ bottom:0; left: 0; 
- background:rgba(0,0,0,.8); width: 100%; margin:0; padding: 10px 8.333333333333332%; }
+.yjDialog .carousel-indicators{ 
+ background:rgba(0,0,0,.8); margin:0; position: relative; width: auto; top: auto; left: 2px; bottom: auto; float: left; }
+ .carousel-indicators-pn{ position: absolute; padding:20px 10px;bottom: 0;
+left: 0;
+background: rgba(0,0,0,.8);
+width: 100%; z-index: 2;}
+.carousel-indicators-pn td{ padding:0 5px 0 0;}
+.carousel-indicators-pn .carousel-opt{ position: relative;
+border:1px solid #5c5c5c; background:#171717;color: #919191; display: block;}
+.carousel-indicators-pn .carousel-opt:hover{ background:#2c2c2c; color: #fff}
+.carousel-indicators-pn .carousel-opt span { position: absolute; top: 15px; text-align: center;  width:100%;}
 .yjSlideL{ background: #000; padding-bottom: 60px; overflow: hidden; height: 100%; position: relative; zoom:1;}
 .yjSlideR{background: #fff; padding: 10px; position: absolute; top: 0; right: 0; width: 320px;}
 .yjBt{ position: absolute; bottom: 10px; right: 10px;}
@@ -173,6 +184,7 @@ filter: alpha(opacity=100); background: transparent;}
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #ffffff;
   font-weight: bold;
+  background-color: transparent;
 }
 h1,
 h2,
@@ -203,10 +215,15 @@ h6,
   border-color: #8cb948;
   cursor: default;
 }
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+text-decoration: none;
+color: #fff;
+background-color: #8cb948;
+}
 /*媒体查询部分*/
 @media (min-width: 768px) {
     .navLogin{
-      padding-left:20px;
+      padding-left:10px;
     }
     .navSearch {width: 128px;}
 }
@@ -227,6 +244,6 @@ h6,
 	.yjSlideL{ height: auto; padding-bottom: 10px;}
 	.yjSlideR{padding: 10px; position: static; width: auto;}
 	.yjDialog{ padding-right: 0; }
-	.yjDialog .carousel-indicators{ display: none;}
+	.carousel-indicators-pn { display: none;}
 }
 
