@@ -56,10 +56,8 @@ a:focus {
 /*图片列表*/
 .yjModPicPn .col-md-3{ padding: 0;}
 .yjModPicPn .yjPicItem{ padding:10px}
-.yjModPicPn .yjPicItem:hover{ border:1px solid #ccc; padding: 9px;z-index: 99; position: relative; }
 .yjPicItemHoverCnt{ display: none;}
-.yjModPicPn .yjPicItem:hover .yjPicItemHoverCnt{ display: block; background: #fff; position: absolute; border:1px solid #ccc;
- 	border-top:none; left:-1px; right:-1px; padding: 10px 10px 0}
+
 .yjPicItem .yjPicFont{ margin-top:10px}
 .yjSubTit{ border-top:1px solid #ddd; padding:20px 0 10px; margin-top: 10px}
 .yjSubTit h3{ margin: 0 10px 0 0; font-weight: normal;}
@@ -237,6 +235,9 @@ background-color: #8cb948;
 .fixSub{ top: 0; background:rgba(255,255,255,0.9); z-index: 333; border-bottom: 1px solid #ccc; position: fixed; padding-bottom: 15px; left: 0; right: 0}
 .container {max-width: 1200px;}
 .navSearch {width: 240px}
+.yjModPicPn .yjPicItem:hover{ border:1px solid #ccc; padding: 9px;z-index: 99; position: relative; }
+.yjModPicPn .yjPicItem:hover .yjPicItemHoverCnt{ display: block; background: #fff; position: absolute; border:1px solid #ccc;
+ 	border-top:none; left:-1px; right:-1px; padding: 10px 10px 0}
 }
 
 @media (max-width: 768px) {
