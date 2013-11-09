@@ -11,11 +11,12 @@ a:focus {
   background-color: #8cb948;
   text-decoration: none;
 }
-.mr3{ margin-right: 3px;} .mb10{ margin-bottom: 10px} .mb5{margin-bottom: 5px} .mb15{ margin-bottom: 15px;}.mb20{ margin-bottom: 20px} .mt20{ margin-top: 20px!important} .mNone{ margin: 0}
-.pl10{ padding-left: 10px} .yjBlock{ display: block;} .mr10{ margin-right: 10px} .ml10{ margin-left: 10px;}
-.yjCgreen{ color: #690} .yjCgray6{ color:#666 } .yjCgray9{color: #999} .yjFs12{ font-size: 12px} .pt30{ padding-top: 30px} .yjCgrayc{color: #ccc}
-.yjTxB{ font-weight: bold;} .yjCgrayLink{color: #ccc} .mt10{ margin-top: 10px} .mt5{ margin-top: 5px} .yjFs18{ font-size: 18px}
-.yjYh{ font-family: Microsoft Yahei;}
+.borNone{ border:0 !important;}
+.mr3{ margin-right: 3px;} .mr20{margin-right: 20px} .mb10{ margin-bottom: 10px} .mb5{margin-bottom: 5px} .mb15{ margin-bottom: 15px;}.mb20{ margin-bottom: 20px} .mt20{ margin-top: 20px!important} .mNone{ margin: 0} .mb40{ margin-bottom: 40px} .mb80{ margin-bottom: 80px} .pl40{padding-left: 40px}
+.pl10{ padding-left: 10px} .yjBlock{ display: block;} .mr10{ margin-right: 10px} .ml10{ margin-left: 10px;} .mt50{ margin-top: 50px} .pl20{ padding-left: 20px}
+.yjCgreen{ color: #690} .yjCgray6{ color:#666 } .yjCgray9{color: #999} .yjFs12{ font-size: 12px} .pt30{ padding-top: 30px} .yjCgrayc{color: #ccc} .yjFs40{ font-size: 40px}
+.yjTxB{ font-weight: bold;} .yjCgrayLink{color: #ccc} .mt10{ margin-top: 10px} .mt5{ margin-top: 5px} .yjFs18{ font-size: 18px} .yjFs30{ font-size: 30px}
+.yjYh{ font-family: Microsoft Yahei;} .yjLh22{ line-height: 22px;}
 .yjCgrayLink:hover,
 .yjCgrayLink:focus {
   color: #fff;
@@ -33,12 +34,23 @@ a:focus {
   text-decoration: none;
 }
 .picLink:hover{ background-color: transparent;}
-.yjMtNone{ margin: 0!important} .yjPrNone{ padding-right: 0!important;}
+.yjMtNone{ margin-top: 0!important} .yjPrNone{ padding-right: 0!important;}
 .yjSelectPn .form-control{ display: inline-block; width: auto; height: 22px; padding:0;}
 .yjSelectPn .mb10{ margin-bottom: 7px}
 .checkbox{font-size: 14px; display: inline-block; margin: 0}
+.tag-warning{color: #ffffff;
+background-color: #f0ad4e;
+border-color: #eea236;}
+.tag-success{color: #ffffff;
+background-color: #47a447;
+border-color: #398439;}
+.tag-info{
+  color: #ffffff;
+background-color: #39b3d7;
+border-color: #269abc;
+}
 /*导航部分*/
-.navbar-header h1{width:70px; height: 20px; margin: 16px 20px 14px 10px; background-repeat: no-repeat;}
+.navbar-header h1{width:70px; height: 50px; margin: 0 20px 0 10px; background-position: 0 -193px; background-repeat: no-repeat;}
 .yjIcn{ background: url(../img/sprites.png); _background: url(../img/sprites.ie6.png);}
 .yjIcn:hover{ background-color: transparent;}
 .navSearch{float: right; margin: 13px 0 12px; position: relative;}
@@ -89,6 +101,9 @@ border:1px solid #5c5c5c; background:#171717;color: #919191; display: block;}
 .yjPicMore:hover{ color: #fff; background-color: #690}
 .yjPicMore span{ position: absolute; bottom: 10px; right: 10px; display: block;}
 .yjPicMore strong{ font-size: 30px; font-weight: normal;}
+
+
+
 /*评论部分*/
 .yjCommB,
 .yjCommI,
@@ -143,7 +158,7 @@ margin-right: 3px;
 .yjShare dd{ margin-bottom: 15px;}
 /*幻灯片*/
 .yjDialog{ width:auto; padding:0; background: #fff;padding-right: 320px; height: 100%;}
-  .carousel-inner{ height: 690px;}
+.yjDialog .carousel-inner{ height: 690px;}
 .yjDialog .carousel-inner  img{ margin-left: auto; margin-right: auto; max-height: 690px}
 .yjDialog .modal-header{ border-bottom: 0; padding-top:30px}
 .yjDialog .carousel-control{ background: transparent;}
@@ -174,7 +189,87 @@ border:1px solid #5c5c5c; background:#171717;color: #919191; display: block;}
 .yjBorderMod{ border-top:1px solid #ccc; padding-top: 10px}
 .yjLbBtn{ position: absolute; right: 20px;}
 .relayCnt{ display: none;}
+ /*左侧子导航*/
+ .yjSideSubNav{ list-style-type: none; padding: 0; margin-bottom: 30px}
+ .yjSideSubNav li{ height: 24px; line-height: 24px; position: relative; margin-bottom: 8px; padding-left: 10px; cursor: pointer;}
+ .yjSideSubNav li:hover,.yjSideSubNav li:hover a{  background: #8cb948; color: #fff}
+ .yjSideSubNav li span{ position: absolute; top: 0; right: 10px; font-size: 12px}
+ .yjSideSubNav li a{ color: #333; letter-spacing: 4px}
+ .yjSideSubNav li a:hover{ color: #fff; background-color: transparent;}
+ .yjSideSubNav .active, 
+ .yjSideSubNav .active a
+ { background: #8cb948; color: #fff}
+
+ .yjSideBanner{ background-color: #f8f8f8; padding: 15px 0 5px 10px; cursor: pointer;}
+ .yjSideBanner .media-object{ width: 40px; height: 40px; margin-top: 5px; background-position:-32px -103px }
+ .yjSideBanner:hover,
+ .yjSideBanner:hover a,
+ .yjSideBanner:hover p,
+ .yjSideBannerActive ,
+ .yjSideBannerActive a,
+ .yjSideBannerActive p
+ { background-color: #8cb948; color: #fff}
+ .yjSideBanner:hover .media-object,
+ .yjSideBannerActive .media-object
+ {  background-position:-32px -147px }
+
+ .yjArcPicPn{ position: relative; zoom:1;}
+ .yjArcPicPn .yjArcPicCont{padding-top: 10px  }
+
+.yjArcPersonPn{ background: #f8f8f8; padding: 10px 0 4px 0}
+.yjArcPersonPn .media{ padding-left: 20px; padding: 5px 0;}
+
+.yjArcBasePn{border-top: 1px solid #d3d3d3; padding-top: 20px;}
+.yjArcBasePic{ position: relative;}
+.yjArcBasePos{ position: absolute; bottom: 10px; right: 20px;}
+.yjArcBasePos a{ float:left; display:inline; margin:0 0 10px 20px;color: #ccc; background: rgba(0,0,0,0.8); border-radius: 20px; padding:4px 10px; position: relative;}
+.yjArcBasePos a img{border:1px solid #7ea741}
+.yjArcBasePos a .yjArcBaseAdd{border:1px solid #fff}
+.yjArcBasePos a:hover{background:rgba(140,185,70,.8);
+color: #fff;}
+.yjArcBasePic .yjArcAddTag{ display: none;}
+.yjArcBasePic:hover .yjArcAddTag{ display: block;}
+.archModal .modal-header{ background-color: #f8f8f8; border-top-left-radius:5px; border-top-right-radius:5px; border-bottom: none;}
+.archModal .modal-footer{ background-color: #f8f8f8; border-bottom-left-radius:5px; border-bottom-right-radius:5px; border-top: none;
+padding:10px 20px; margin-top: 0;
+}
+.archModal .media{ overflow: visible;}
+
+.yjArcBasePos .glyphicon-plus{ position: absolute; font-size: 12px; top: 8px; left: 14px;}
+.yjPerTit{ line-height: 38px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
+
+.yjPicItem4{ margin-right: -4px}
+.yjPicItem4 .col-md-2{ padding-right:4px}
+.yjPicItem4 .col-md-2 img{margin-bottom: 10px}
+
+.yjTipBg{ background: #f5f5f5; margin: 0 -14px 10px; padding:5px 0 5px 14px;}
+
+ 
+.yjArcPicTit{ padding:15px 0 5px;}
+ .yjArcPicTit h3{ height: 40px; margin: 0}
+ .yjArcTipL{ width:200px; float: left; margin-right: 20px;}
+
+ .yjInTit{ margin-bottom: 30px; margin-top: 30px; font-size: 24px}
+ .yjInCarouselPn{ position: relative;}
+ .yjInCarouselPn li{ background: rgba(255,255,255,.5); border:none; height: 16px; width: 16px; margin:0 4px; }
+ .yjInCarouselPn li.active{ margin:0 4px; width:16px; height: 16px;}
+  .yjInCarouselPn  .yjArcBasePos{z-index: 15}
+ .yjInLogin{ background: rgba(0,0,0,.2); border-radius: 5px; position: absolute; bottom: 110px; z-index: 15; padding:10px 20px; color: #fff }
+ .yjInLogin button { font-size: 24px; letter-spacing: 2px;}
+ .yjInLogin a:hover { background-color:transparent; }
+ .yjInArcPn .media{ margin-bottom: 25px}
+ .yjInArcPn .media .pull-left{ margin-right: 15px}
+ .yjInGrayBg{ background-color: #f8f8f8; margin-top: -10px; padding-bottom: 10px}
+ .yjInExpert{ text-align: center; padding-top: 20px; margin-bottom: 10px;}
+ .yjInExpert .img-center{ margin-left: auto;margin-right: auto;}
+ .yjInConsultPn .yjInConsult{ padding-top: 30px;}
+
+
 /*覆盖样式*/
+.nav > li > a:hover, .nav > li > a:focus{
+background-color: #8cb948;
+}
+.popover{ max-width:350px;}
 .navbar-inverse{background-color: #3d3d3d}
 .navbar-inverse .navbar-text {
   color: #CCC;
@@ -207,7 +302,7 @@ h6,
 .h3,
 .h4,
 .h5,
-.h6{ font-weight: normal;}
+.h6{ font-weight: normal; font-family:"Microsoft Yahei"}
 .pagination > li > a:hover,
 .pagination > li > span:hover,
 .pagination > li > a:focus,
@@ -232,14 +327,26 @@ background-color: #8cb948;
 }
 .modal{ overflow: hidden;}
 /*媒体查询部分*/
+@media (max-width: 768px) {
+  .text-right{ text-align: left;}
+  .yjSlideL{ height: auto; padding-bottom: 10px;}
+  .yjSlideR{padding: 10px; position: static; width: auto;}
+  .yjDialog{ padding-right: 0; }
+  .carousel-indicators-pn { display: none;}
+}
 @media (min-width: 768px) {
     .navLogin{
       padding-left:10px;
     }
     .navSearch {width: 128px;}
+    .yjArcPicPn .yjArcPicAbs{ position: absolute; top: 0; background: rgba(255,255,255,.9); right:-10px; height: 100%; padding-right: 20px}
+    .yjAcrBaseBor{border-right: 1px solid #d3d3d3}
 }
 @media (min-width: 992px) and (max-width: 1199px) {
 .navSearch {width: 240px}
+.yjArcPicPn .yjArcPicAbs{ position: absolute; top: 0; background: rgba(255,255,255,.9); right:-10px; height: 100%; padding-right: 20px}
+.yjArcPicIntro{ height:40px; overflow: hidden;}
+.yjSideSubNavFix{ position: fixed; top: 0}
 }
 @media (min-width: 1200px) {
 .yjPicItem3 .col-md-2{ padding-left: 0}
@@ -252,13 +359,16 @@ background-color: #8cb948;
 .yjModPicPn .yjPicItem:hover .yjPicItemHoverCnt{ display: block; background: #fff; position: absolute; border:1px solid #ccc;
  	border-top:none; left:-1px; right:-1px; padding: 10px 10px 0}
 
+.yjArcPicPn .yjArcPicAbs{ position: absolute; top: 0; background: rgba(255,255,255,.9); right:-10px; height: 100%; padding-right: 20px}
+.yjArcPersonPn .media{border-right: 1px solid #d3d3d3}
+.yjAcrBaseBor{border-right: 1px solid #d3d3d3}
+.yjSideSubNavFix{ position: fixed; top: 0}
+.yjInCarouselPn{ width: 1280px; margin-right: auto; margin-left: auto;}
+.yjInLogin{ left: 50px}
+.yjArcImgPn{text-align: center;}
+.yjArcImgPn img{ max-height: 800px; margin-left: auto; margin-right: auto; }
+
 }
 
-@media (max-width: 768px) {
-	.text-right{ text-align: left;}
-	.yjSlideL{ height: auto; padding-bottom: 10px;}
-	.yjSlideR{padding: 10px; position: static; width: auto;}
-	.yjDialog{ padding-right: 0; }
-	.carousel-indicators-pn { display: none;}
-}
+
 
