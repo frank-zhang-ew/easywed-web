@@ -226,7 +226,23 @@ $(document).ready(function() {
         $("#comment2").keyup(maxLimit);  
          
     });  
-    
+    //下拉框
+    $('.yjExpertFun').hover(function() {
+        $(this).addClass('yjExpertActive');
+        $(this).children('.glyphicon ').hide();
+    }, function() {
+        $(this).removeClass('yjExpertActive');
+        $(this).children('.glyphicon ').show();
+    });
+    $('.yjNavLoginName').hover(function() {
+        $(this).children('.yjNavLoginDrop').show().hover(function() {
+             clearTimeout(window.timer2);
+        }, function() {
+            $(this).hide();
+        });
+    }, function() {
+        window.timer2 = setTimeout(function () { $(".yjNavLoginDrop").hide(); }, 200);
+    });
 
  
 });
